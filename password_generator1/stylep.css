@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after
+{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    width:10pw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* angryTools.gredient */
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(0, 128, 0, 1) 100%);
+}
+.container{
+    width:90%;
+    max-width: 450px;
+}
+h1{
+    color:white;
+    opacity: 0.75;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.display-container{
+    position: relative;
+    background-color:rgb(167, 19, 167);
+    border-radius:1rem; 
+    /* border: bottom 0.35em solid;  */
+    margin:1rem 0;
+    padding-top:0.35rem;
+    /* border:none */
+}
+.display{
+    width: 100%;
+    color:rgb(56, 19, 48);
+    font-weight: 600;
+    font-size:1.5rem;
+    background: transparent;
+    padding: 1.15rem 1rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+   
+}
+.display::placeholder{
+    position: absolute;
+    top:50%;
+    left:1.5rem;
+    font-size: 1.5rem;
+    line-height:30px;
+    color:rgb(208, 208, 13);
+    opacity:0.65;
+    text-transform: uppercase;
+    transform:translateY(-50%)
+}
+.display-container button{
+    position:absolute;
+    top:50%;
+    right:1.5rem;
+    transform:translateY(-50%)
+}
+.input-container{
+    width: 100%;
+    background-color:rgb(48, 6, 48); 
+    border-radius:1rem;
+   padding:2rem;
+   border-bottom: 0.35rem solid rgb(201, 53, 201);
+}
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* to acess ek no.cha paragraph */
+.length-container p:nth-child(1){
+color:rgb(231, 221, 221);
+font-size:1.5rem;
+}
+.length-container p:nth-child(2){
+    color:rgb(255, 255, 255);
+    font-size:1.5rem;
+    }
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+.strength-container p{
+    color:white;
+    font-size: 1.5rem;
+}
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:50%;
+
+}
+.Generate-button{
+    width:100%;
+    padding:2px;
+    background-color:rgb(86, 22, 147);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid yellow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:yellow;
+    font-size:1.25rem;
+}
+.ch{
+    /* display: flex;*/ 
+     margin:0.2rem;  
+    align-items: center;
+}
+input[type="checkbox"]
+{  
+    appearance: none;/*default style nahi chahiye*/
+    width: 20px;
+    height: 20px;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    position: relative; 
+    border-radius: 0.35rem;
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(10, 71, 71);
+}
+input[type="checkbox"]:checked::before
+{
+    content:'✔';
+    position:absolute;
+    color:rgb(242, 231, 231);
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 40%;
+    top: -3.5px;
+    transform: translateX(-40%);
+   /* transform: translateY(0%);*/
+}
+label{
+    color:white;
+    font-size:1.25rem;
+    letter-spacing: 0.7;
+    
+}
+.slider{
+    position: relative;
+    appearance:none;
+    height: 0.75rem;
+    width:100%;
+    background-color: blue;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom:1.5rem;
+    cursor:pointer;
+    background-repeat: no-repeat;
+    outline: none;
+
+}
+/* to acess the thumb webkit engine*/
+.slider::-webkit-slider-thumb{
+    z-index:1;
+    appearance: none;
+    height: 1.75rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color:rgb(0, 255, 38);
+    cursor:pointer
+
+}
+.slider:focus{
+    outline: solid 2px yellow;
+
+
+}
+.slider::-webkit-slider-thumb:hover{
+    outline:2px solid rgb(255, 255, 255);
+    background-color: violet;
+    box-shadow:0px opx 5px yellow ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
